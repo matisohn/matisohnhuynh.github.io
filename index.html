@@ -1,11 +1,144 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Matisohn Huynh</title>
+  <meta name="description" content="Personal website: projects, about me, and contact." />
+
+  <!-- Swap font once you inspect the site you’re matching -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <h1>Hello, I'm Matisohn 👋</h1>
-  <p>Welcome to my personal website.</p>
-  <p>Electrical Engineering | University of Miami | Running</p>
+  <header class="topbar">
+    <a class="brand" href="#top">Your Name</a>
+
+    <nav class="nav">
+      <a href="#projects">Projects</a>
+      <a href="#aboutme">About Me</a>
+      <a href="#contact">Contact</a>
+      <button id="themeBtn" class="btn btn-ghost" type="button" aria-label="Toggle theme">Theme</button>
+    </nav>
+  </header>
+
+  <main id="top" class="container">
+    <section class="hero">
+      <div>
+        <p class="kicker">Electrical Engineering • University of Miami</p>
+        <h1>Building things that launch.</h1>
+        <p class="lead">
+          Hi! My name is Matisohn Huynh, I am a senior at the University of Miami, studying Electrical Engineering.
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#projects">See projects</a>
+          <a class="btn btn-ghost" href="https://github.com/YOUR_USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+        </div>
+      </div>
+
+      <div class="heroCard">
+        <div class="stat">
+          <span class="label">Currently</span>
+          <span class="value">Looking for internships</span>
+        </div>
+        <div class="stat">
+          <span class="label">Interests</span>
+          <span class="value">Embedded • Controls • Web</span>
+        </div>
+        <div class="stat">
+          <span class="label">Email</span>
+          <span class="value">matihuynh@gmail.com</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="sectionHead">
+        <h2>Projects</h2>
+        <p>Pick 3–6 things you’re proud of. Link demos + code.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card">
+          <h3>Project Title</h3>
+          <p>1–2 lines describing what it is + impact.</p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>GitHub Pages</span>
+          </div>
+          <div class="links">
+            <a href="#" target="_blank" rel="noreferrer">Live</a>
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Another Project</h3>
+          <p>Short description. Keep it scannable.</p>
+          <div class="tags">
+            <span>MATLAB</span><span>Controls</span>
+          </div>
+          <div class="links">
+            <a href="#" target="_blank" rel="noreferrer">Report</a>
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>DE1-SoC / ARMv7 Work</h3>
+          <p>Interrupts, GIC, interfacing—what you learned + what you built.</p>
+          <div class="tags">
+            <span>C</span><span>ARM</span><span>FPGA</span>
+          </div>
+          <div class="links">
+            <a href="#" target="_blank" rel="noreferrer">Write-up</a>
+            <a href="#" target="_blank" rel="noreferrer">Code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="writing" class="section">
+      <div class="sectionHead">
+        <h2>Writing</h2>
+        <p>Optional—great if you want it to feel like a “real” site.</p>
+      </div>
+
+      <div class="stack">
+        <a class="row" href="#">
+          <span class="rowTitle">Post title goes here</span>
+          <span class="rowMeta">Jan 2026</span>
+        </a>
+        <a class="row" href="#">
+          <span class="rowTitle">Another post</span>
+          <span class="rowMeta">Dec 2025</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="sectionHead">
+        <h2>Contact</h2>
+        <p>Make it easy to reach you.</p>
+      </div>
+
+      <div class="contact">
+        <a class="btn" href="mailto:you@email.com">Email me</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/YOUR_HANDLE" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Matisohn Huynh</span>
+      <span class="dot">•</span>
+      <a href="#top">Back to top</a>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
